@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Citrix
+  
+    &mdash; Documentation by YARD 0.9.16
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Citrix";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (C)</a> &raquo;
+    
+    
+    <span class="title">Citrix</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: Citrix
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Citrix</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>Parsers/citrix/citrix.rb</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#citrix_cleanup-instance_method" title="#citrix_cleanup (instance method)">#<strong>citrix_cleanup</strong>(event)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Cleans out unnecessary variables.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#citrix_filter-instance_method" title="#citrix_filter (instance method)">#<strong>citrix_filter</strong>(event)  &#x21d2; Event </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Filters and parses elements into event array.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#citrix_process-instance_method" title="#citrix_process (instance method)">#<strong>citrix_process</strong>(flag, entry, event)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Processes and splits the event log into specific variables.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#citrix_rename-instance_method" title="#citrix_rename (instance method)">#<strong>citrix_rename</strong>(old, new, event)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Renames old variable to new specified variable name, returns event.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="citrix_cleanup-instance_method">
+  
+    #<strong>citrix_cleanup</strong>(event)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Cleans out unnecessary variables</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>event</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>array [Event]</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>none</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Parsers/citrix/citrix.rb', line 143</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_citrix_cleanup'>citrix_cleanup</span><span class='lparen'>(</span><span class='id identifier rubyid_event'>event</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_to_hash'>to_hash</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_k'>k</span><span class='comma'>,</span> <span class='id identifier rubyid_v'>v</span><span class='op'>|</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_k'>k</span><span class='period'>.</span><span class='id identifier rubyid_start_with?'>start_with?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>agent</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_remove'>remove</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='rparen'>)</span>
+        <span class='kw'>end</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_k'>k</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Label</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_remove'>remove</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='rparen'>)</span>
+        <span class='kw'>end</span>
+        <span class='kw'>if</span> <span class='id identifier rubyid_k'>k</span><span class='period'>.</span><span class='id identifier rubyid_start_with?'>start_with?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>device</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+            <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_k'>k</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Custom</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+                <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_remove'>remove</span><span class='lparen'>(</span><span class='id identifier rubyid_k'>k</span><span class='rparen'>)</span>
+            <span class='kw'>end</span>
+        <span class='kw'>end</span>
+    <span class='rbrace'>}</span>
+
+    <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_remove'>remove</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>cefVersion</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_remove'>remove</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sourceZoneURI</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_event'>event</span> <span class='op'>=</span> <span class='id identifier rubyid_rename'>rename</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>deviceCustomDate1</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>start_time</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_event'>event</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_event'>event</span> <span class='op'>=</span> <span class='id identifier rubyid_rename'>rename</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>deviceCustomDate2</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>end_time</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_event'>event</span><span class='rparen'>)</span>
+
+    <span class='kw'>return</span> <span class='id identifier rubyid_event'>event</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="citrix_filter-instance_method">
+  
+    #<strong>citrix_filter</strong>(event)  &#x21d2; <tt>Event</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Filters and parses elements into event array.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>event</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>System event string</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Event</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>parsed event array</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Parsers/citrix/citrix.rb', line 11</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_citrix_filter'>citrix_filter</span><span class='lparen'>(</span><span class='id identifier rubyid_event'>event</span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_types'>types</span> <span class='op'>=</span> <span class='lbracket'>[</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>LOGIN</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>LOGOUT</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>HTTPREQUEST</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>LOGIN_FAILED</span><span class='tstring_end'>&quot;</span></span> <span class='rbracket'>]</span>
+
+    <span class='id identifier rubyid_login'>login</span> <span class='op'>=</span> <span class='const'>Struct</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='symbol'>:user_id</span><span class='comma'>,</span> <span class='symbol'>:source_ip</span><span class='comma'>,</span> <span class='symbol'>:sess_id</span><span class='comma'>,</span> <span class='symbol'>:v_server</span><span class='comma'>,</span> <span class='symbol'>:app</span><span class='comma'>,</span> <span class='symbol'>:client_type</span><span class='comma'>,</span> <span class='symbol'>:groups</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_logout'>logout</span> <span class='op'>=</span> <span class='const'>Struct</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='symbol'>:user_id</span><span class='comma'>,</span> <span class='symbol'>:source_ip</span><span class='comma'>,</span> <span class='symbol'>:sess_id</span><span class='comma'>,</span> <span class='symbol'>:v_server</span><span class='comma'>,</span> <span class='symbol'>:sess_start</span><span class='comma'>,</span> <span class='symbol'>:sess_end</span><span class='comma'>,</span> <span class='symbol'>:sess_dur</span><span class='comma'>,</span> <span class='symbol'>:method</span><span class='comma'>,</span> <span class='symbol'>:groups</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_flogin'>flogin</span> <span class='op'>=</span> <span class='const'>Struct</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='symbol'>:user_id</span><span class='comma'>,</span> <span class='symbol'>:source_ip</span><span class='comma'>,</span> <span class='symbol'>:reason</span><span class='comma'>,</span> <span class='symbol'>:app</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_httpreq'>httpreq</span> <span class='op'>=</span> <span class='const'>Struct</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='symbol'>:user_id</span><span class='comma'>,</span> <span class='symbol'>:source_ip</span><span class='comma'>,</span> <span class='symbol'>:sess_id</span><span class='comma'>,</span> <span class='symbol'>:groups</span><span class='comma'>,</span> <span class='symbol'>:method</span><span class='comma'>,</span> <span class='symbol'>:url</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_tcpstat'>tcpstat</span> <span class='op'>=</span> <span class='const'>Struct</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='symbol'>:user_id</span><span class='comma'>,</span> <span class='symbol'>:source_ip</span><span class='comma'>,</span> <span class='symbol'>:sess_id</span><span class='comma'>,</span> <span class='symbol'>:tb_s</span><span class='comma'>,</span> <span class='symbol'>:tb_r</span><span class='comma'>,</span> <span class='symbol'>:tcb_s</span><span class='comma'>,</span> <span class='symbol'>:tcb_r</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_updstat'>updstat</span> <span class='op'>=</span> <span class='const'>Struct</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='symbol'>:user_id</span><span class='comma'>,</span> <span class='symbol'>:source_ip</span><span class='comma'>,</span> <span class='symbol'>:sess_id</span><span class='comma'>,</span> <span class='symbol'>:tb_s</span><span class='comma'>,</span> <span class='symbol'>:tb_r</span><span class='rparen'>)</span>
+
+    <span class='id identifier rubyid_top_rgx'>top_rgx</span> <span class='op'>=</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>(\d+\/\d+\/\d+\:\d+\:\d+\:\d+ GMT) \S+ \S+ \: default (\S+) (\S+) (.*)</span><span class='regexp_end'>/</span></span>
+    <span class='id identifier rubyid_login_rgx'>login_rgx</span> <span class='op'>=</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\d+ \d+ \: Context (\S+)@(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}) - SessionId\: \d+- User \S+ - Client_ip \d{1,3}.\d{1,3}.\d{1,3}.\d{1,3} - Nat_ip &quot;Mapped Ip&quot; - Vserver (\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3})\:\d+ - Browser_type &quot;(.+)&quot; - SSLVPN_client_type (.+) - Group\(s\) &quot;(.+)&quot;</span><span class='regexp_end'>/</span></span>
+    <span class='id identifier rubyid_logout_rgx'>logout_rgx</span> <span class='op'>=</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\d+ \d+ \: Context (\S+)@(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}) - SessionId\: \d+- User \S+ - Client_ip \d{1,3}.\d{1,3}.\d{1,3}.\d{1,3} - Nat_ip &quot;Mapped Ip&quot; - Vserver \d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}\:\d+ - Start_time &quot;(\d+\/\d+\/\d+\:\d+\:\d+\:\d+ GMT)&quot; - End_time &quot;(\d+\/\d+\/\d+\:\d+\:\d+\:\d+ GMT)&quot; - Duration (\d+\:\d+\:\d+)\s+- .+ - LogoutMethod &quot;(\S+)&quot; - Group\(s\) &quot;(.+)&quot;</span><span class='regexp_end'>/</span></span>
+    <span class='id identifier rubyid_flogin_rgx'>flogin_rgx</span> <span class='op'>=</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\d+ \d+ \:  User (\S+) \- Client_ip (\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}) \- Failure_reason &quot;(.+)&quot; \- Browser (.*)</span><span class='regexp_end'>/</span></span>
+    <span class='id identifier rubyid_httpreq_rgx'>httpreq_rgx</span> <span class='op'>=</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\d+ \d+ \: Context (\S+)@(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}) \- SessionId\: \d+\- (\S+) User \S+ \: Group\(s\) .+ \: Vserver \d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}\:\d+ \- .+ (\S+) (.*) \- \-</span><span class='regexp_end'>/</span></span>
+    <span class='id identifier rubyid_tcpstat_rgx'>tcpstat_rgx</span> <span class='op'>=</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='regexp_end'>/</span></span>
+    <span class='id identifier rubyid_udpstat_rgx'>udpstat_rgx</span> <span class='op'>=</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='regexp_end'>/</span></span>
+
+    <span class='id identifier rubyid_rgx_map'>rgx_map</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+        <span class='label'>login:</span> <span class='lbrace'>{</span>
+            <span class='label'>rgx:</span> <span class='id identifier rubyid_login_rgx'>login_rgx</span><span class='comma'>,</span>
+            <span class='label'>obj:</span> <span class='id identifier rubyid_login'>login</span>
+        <span class='rbrace'>}</span><span class='comma'>,</span>
+        <span class='label'>logout:</span> <span class='lbrace'>{</span>
+            <span class='label'>rgx:</span> <span class='id identifier rubyid_logout_rgx'>logout_rgx</span><span class='comma'>,</span>
+            <span class='label'>obj:</span> <span class='id identifier rubyid_logout'>logout</span>
+        <span class='rbrace'>}</span><span class='comma'>,</span>
+        <span class='label'>flogin:</span> <span class='lbrace'>{</span>
+            <span class='label'>rgx:</span> <span class='id identifier rubyid_flogin_rgx'>flogin_rgx</span><span class='comma'>,</span>
+            <span class='label'>obj:</span> <span class='id identifier rubyid_flogin'>flogin</span>
+        <span class='rbrace'>}</span><span class='comma'>,</span>
+        <span class='label'>httpreq:</span> <span class='lbrace'>{</span>
+            <span class='label'>rgx:</span> <span class='id identifier rubyid_httpreq_rgx'>httpreq_rgx</span><span class='comma'>,</span>
+            <span class='label'>obj:</span> <span class='id identifier rubyid_httpreq'>httpreq</span>
+        <span class='rbrace'>}</span><span class='comma'>,</span>
+        <span class='label'>tcpstat:</span> <span class='lbrace'>{</span>
+            <span class='label'>rgx:</span> <span class='id identifier rubyid_tcpstat_rgx'>tcpstat_rgx</span><span class='comma'>,</span>
+            <span class='label'>obj:</span> <span class='id identifier rubyid_tcpstat'>tcpstat</span>
+        <span class='rbrace'>}</span><span class='comma'>,</span>
+        <span class='label'>udpstat:</span> <span class='lbrace'>{</span>
+            <span class='label'>rgx:</span> <span class='id identifier rubyid_udpstat_rgx'>udpstat_rgx</span><span class='comma'>,</span>
+            <span class='label'>obj:</span> <span class='id identifier rubyid_udpstat'>udpstat</span>
+        <span class='rbrace'>}</span>
+    <span class='rbrace'>}</span>
+
+    <span class='kw'>begin</span>
+        <span class='id identifier rubyid_type'>type</span> <span class='op'>=</span> <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+
+        <span class='kw'>if</span> <span class='id identifier rubyid_types'>types</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span> <span class='op'>=</span> <span class='id identifier rubyid_cleanup'>cleanup</span><span class='lparen'>(</span><span class='id identifier rubyid_event'>event</span><span class='rparen'>)</span>
+            <span class='kw'>return</span> <span class='lbracket'>[</span><span class='id identifier rubyid_event'>event</span><span class='rbracket'>]</span>
+        <span class='kw'>end</span>
+
+        <span class='id identifier rubyid_line'>line</span> <span class='op'>=</span> <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>message</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_info'>info</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_line'>line</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+
+        <span class='id identifier rubyid_message'>message</span> <span class='op'>=</span> <span class='id identifier rubyid_line'>line</span><span class='period'>.</span><span class='id identifier rubyid_scan'>scan</span><span class='lparen'>(</span><span class='id identifier rubyid_top_reg'>top_reg</span><span class='rparen'>)</span>
+
+        <span class='id identifier rubyid_dt'>dt</span> <span class='op'>=</span> <span class='id identifier rubyid_message'>message</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span>
+        <span class='id identifier rubyid_msg'>msg</span> <span class='op'>=</span> <span class='id identifier rubyid_message'>message</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span>
+        <span class='id identifier rubyid_str'>str</span> <span class='op'>=</span> <span class='id identifier rubyid_message'>message</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span>
+        <span class='id identifier rubyid_dat'>dat</span> <span class='op'>=</span> <span class='id identifier rubyid_message'>message</span><span class='lbracket'>[</span><span class='int'>3</span><span class='rbracket'>]</span>
+
+        <span class='id identifier rubyid_rgx_map'>rgx_map</span><span class='period'>.</span><span class='id identifier rubyid_each_pair'>each_pair</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_dict'>dict</span><span class='op'>|</span>
+            <span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='id identifier rubyid_str'>str</span><span class='period'>.</span><span class='id identifier rubyid_scan'>scan</span><span class='lparen'>(</span><span class='id identifier rubyid_dict'>dict</span><span class='lbracket'>[</span><span class='symbol'>:rgx</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='kw'>if</span> <span class='id identifier rubyid_res'>res</span>
+                <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_debug'>debug</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>found </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+                <span class='id identifier rubyid_fun'>fun</span> <span class='op'>=</span> <span class='id identifier rubyid_dict'>dict</span><span class='lbracket'>[</span><span class='symbol'>:obj</span><span class='rbracket'>]</span>
+                <span class='id identifier rubyid_entry'>entry</span> <span class='op'>=</span> <span class='id identifier rubyid_fun'>fun</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_res'>res</span><span class='rparen'>)</span>
+                <span class='id identifier rubyid_ret'>ret</span> <span class='op'>=</span> <span class='id identifier rubyid_process'>process</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='comma'>,</span> <span class='id identifier rubyid_event'>event</span><span class='rparen'>)</span>
+                <span class='kw'>break</span>
+            <span class='kw'>end</span>
+        <span class='rbrace'>}</span>
+
+        <span class='kw'>return</span> <span class='lbracket'>[</span><span class='id identifier rubyid_event'>event</span><span class='rbracket'>]</span>
+    <span class='kw'>rescue</span>
+        <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_error'>error</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_line'>line</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+        <span class='kw'>return</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="citrix_process-instance_method">
+  
+    #<strong>citrix_process</strong>(flag, entry, event)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Processes and splits the event log into specific variables</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>system_event_flag</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>entry</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>system_event</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a href="Event">Array<</a>&gt;</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>none</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Parsers/citrix/citrix.rb', line 98</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_citrix_process'>citrix_process</span><span class='lparen'>(</span><span class='id identifier rubyid_flag'>flag</span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='comma'>,</span> <span class='id identifier rubyid_event'>event</span><span class='rparen'>)</span>
+    <span class='kw'>case</span> <span class='id identifier rubyid_flag'>flag</span>
+        <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>login</span><span class='tstring_end'>&#39;</span></span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sess_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:sess_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>v_server</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:v_server</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>app</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:app</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>client_type</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:client_type</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>groups</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:groups</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+        <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>logout</span><span class='tstring_end'>&#39;</span></span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sess_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:sess_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>v_server</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:v_server</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sess_start</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:sess_start</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sess_end</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:sess_end</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sess_dur</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:sess_dur</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>method</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:method</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>groups</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:groups</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+        <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>flogin</span><span class='tstring_end'>&#39;</span></span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>reason</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:reason</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>app</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:app</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+        <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>httpreq</span><span class='tstring_end'>&#39;</span></span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sess_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:sess_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>groups</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:groups</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>method</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:method</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>url</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:url</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+        <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tcpstat</span><span class='tstring_end'>&#39;</span></span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sess_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:sess_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tb_s</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:tb_s</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tb_r</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:tb_r</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tcb_r</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:tcb_r</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tcb_r</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:tcb_r</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+        <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>udpstat</span><span class='tstring_end'>&#39;</span></span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sess_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:sess_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tb_s</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:tb_s</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+            <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tb_s</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:tb_s</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+        <span class='kw'>else</span>
+            <span class='id identifier rubyid_logger'>logger</span><span class='period'>.</span><span class='id identifier rubyid_error'>error</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bad flag: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_flag'>flag</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+
+    <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>user_id</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:user_id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>source_ip</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_entry'>entry</span><span class='lbracket'>[</span><span class='symbol'>:source_ip</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="citrix_rename-instance_method">
+  
+    #<strong>citrix_rename</strong>(old, new, event)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Renames old variable to new specified variable name, returns event</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>old_name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>new_name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>system_event</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><a href="Event">Array<</a>&gt;</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>event</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+171
+172
+173
+174
+175</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Parsers/citrix/citrix.rb', line 171</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_citrix_rename'>citrix_rename</span><span class='lparen'>(</span><span class='id identifier rubyid_old'>old</span><span class='comma'>,</span> <span class='id identifier rubyid_new'>new</span><span class='comma'>,</span> <span class='id identifier rubyid_event'>event</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='id identifier rubyid_new'>new</span><span class='comma'>,</span> <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_old'>old</span><span class='rparen'>)</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_event'>event</span><span class='period'>.</span><span class='id identifier rubyid_remove'>remove</span><span class='lparen'>(</span><span class='id identifier rubyid_old'>old</span><span class='rparen'>)</span>
+    <span class='kw'>return</span> <span class='id identifier rubyid_event'>event</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Thu Nov  1 13:58:51 2018 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.16 (ruby-2.3.7).
+</div>
+
+    </div>
+  </body>
+</html>
